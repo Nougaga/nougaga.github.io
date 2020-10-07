@@ -1,0 +1,15 @@
+# Setup
+title:               titleTest
+tagline:             taglineTest
+url:                 https://nougaga.github.io
+baseurl:             https://nougaga.github.io
+paginate:            5
+permalink:           pretty
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: UA-179958165-1
