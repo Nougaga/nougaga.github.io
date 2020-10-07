@@ -2,7 +2,7 @@
 title:               titleTest
 tagline:             taglineTest
 url:                 https://nougaga.github.io
-baseurl:             https://nougaga.github.io/nougaga.github.io/            
+# baseurl:             https://nougaga.github.io/nougaga.github.io/            
 paginate:            5
 permalink:           pretty
 encoding:            utf-8
