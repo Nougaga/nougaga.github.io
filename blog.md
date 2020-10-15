@@ -2,9 +2,23 @@
 layout: page
 title: Blog
 ---
-
+<div class="posts">
+  {% for post in site.categories.blog %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 <div class="pagination">
-    {% if paginator.next_page %}
+  {% if paginator.next_page %}
       <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
     {% else %}
       <span class="pagination-item older">Older</span>
@@ -17,5 +31,5 @@ title: Blog
       {% endif %}
     {% else %}
       <span class="pagination-item newer">Newer</span>
-    {% endif %}
-  </div>
+  {% endif %}
+</div>
