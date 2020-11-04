@@ -4,16 +4,27 @@ title:  "Welcome to Jekyll!"
 date:   2020-11-04 22:27:32 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+#### 강조, 코드 조각
+\`_posts\` → `_posts`
 
-Jekyll requires blog post files to be named according to the following format:
+<br>
 
-`YEAR-MONTH-DAY-title.MARKUP`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+#### 포스트 저장
+\`YYYY-MM-DD-title.md\` → url/폴더경로 또는 카테고리/YYYY/MM/DD/title
 
-Jekyll also offers powerful support for code snippets:
+<br>
 
+
+#### 코드 덩어리는 아래에서 {와 % 사이의 공백을 제거
+\{ % highlight ruby % \}<br>
+def print_hi(name)<br>
+  puts "Hi, #{name}"<br>
+end<br>
+print_hi('Tom')<br>
+#=> prints 'Hi, Tom' to STDOUT.<br>
+\{ % endhighlight % \}<br>
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓<br>
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
@@ -22,7 +33,10 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+#### 링크
+\[라벨\]\(URL\) 또는<br>
+\[라벨\]로만 쓰다가 어딘가에<br>
+\[라벨\]:\(URL\)를 명시
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
