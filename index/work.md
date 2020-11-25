@@ -1,0 +1,11 @@
+---
+layout: page
+title: Work
+permalink: /work/
+---
+
+<ul class="posts">
+    {% for post in site.categories.work %}
+      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

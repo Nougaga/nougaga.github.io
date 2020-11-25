@@ -4,5 +4,5 @@
 
 layout: home
 ---
-
+<img src="assets/home_miro.jpg">
 이것저것 실험중
