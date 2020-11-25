@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "How to Make GitHub Pages with MARKDOWN"
 date:   2020-11-04 22:27:32 +0900
-categories: jekyll update
+categories: howto
 ---
 #### 강조, 코드 조각
 \`_posts\` → `_posts`
@@ -15,15 +15,16 @@ categories: jekyll update
 
 <br>
 
-
 #### 코드 덩어리는 아래에서 {와 % 사이의 공백을 제거
-\{ % highlight ruby % \}<br>
-def print_hi(name)<br>
-  puts "Hi, #{name}"<br>
+```
+{ % highlight ruby % }
+def print_hi(name)
+  puts "Hi, #{name}"
 end<br>
-print_hi('Tom')<br>
-#=> prints 'Hi, Tom' to STDOUT.<br>
-\{ % endhighlight % \}<br>
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{ % endhighlight % }
+```
 ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓<br>
 {% highlight ruby %}
 def print_hi(name)
@@ -34,10 +35,13 @@ print_hi('Tom')
 {% endhighlight %}
 
 #### 링크
-\[라벨\]\(URL\) 또는<br>
-\[라벨\]로만 쓰다가 어딘가에<br>
-\[라벨\]:\(URL\)를 명시
+1. \[라벨\]\(URL\) 또는<br>
+2. \[라벨\]로만 쓰다가 어딘가에<br>
+\[라벨\]:\(URL\)의 형태로 명시<br>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[jekyll-docs](https://jekyllrb.com/docs/home)<br>
+[jekyll-gh]<br>
+[jekyll-talk]
+
+[jekyll-gh]:(https://github.com/jekyll/jekyll)
+[jekyll-talk]:(https://talk.jekyllrb.com/)
