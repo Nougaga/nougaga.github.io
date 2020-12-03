@@ -5,4 +5,4 @@
 layout: home
 ---
 <img src="assets/home_miro.jpg">
-이것저것 실험중
+나도 코딩 잘하고 싶다아아아아악!!!!
