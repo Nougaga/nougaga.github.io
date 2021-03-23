@@ -1,2 +1,3 @@
 # nougaga.github.io
-블로그를 만들어볼래
+
+GitHub Pages test
