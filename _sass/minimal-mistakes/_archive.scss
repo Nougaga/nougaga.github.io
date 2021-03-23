@@ -9,12 +9,14 @@
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    // padding-right: $right-sidebar-width-narrow;
+    padding-right: 60px;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // padding-right: $right-sidebar-width;
+    padding-right: 90px;
   }
 }
 
@@ -460,4 +462,14 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
+}
+
+.about-container{
+  border-bottom: 1px solid #c9c9c9;
+
+  .date{
+    font-size: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }
